@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('/yoel-winkler-zCAh6tOWFt8-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: sans-serif;
+}
+
+section {
+    margin: 50px auto 0;
+    width: 90vw;
+    height: 130vh;
+    padding: 10px 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.heading,
+.main {
+    font-size: 0.85rem;
+}
+
+.heading h2 {
+    font-family: roboto;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.heading {
+    padding-bottom: 10px;
+}
+
+.heading p {
+    padding-bottom: 10px;
+}
+
+.f {
+    padding-bottom: 5px;
+}
+
+.s {
+    padding-bottom: 20px;
+}
+
+#day {
+    width: 15vw;
+}
+
+#month {
+    width: 15vw;
+}
+
+#year {
+    width: 18vw;
+}
+
+#submit {
+    display: block;
+    margin: 10px auto 0;
+    padding: 10px 30px;
+    color: black;
+    background-color: #1FAB89;
+    border: 1px solid #1FAB89;
+}
+
+@media (min-width:479px) {
+    section {
+        margin-top: 150px;
+        height: 160vh;
+        width: 90vw;
+        padding-left: 40px;
+    }
+    .s-g {
+        padding-bottom: 10px;
+    }
+    #submit {
+        margin-top: 20px;
+    }
+    #day {
+        width: 10vw;
+    }
+    #month {
+        width: 10vw;
+    }
+    #year {
+        width: 10vw;
+    }
+}
+
+@media (min-width:768px) {
+    section {
+        margin-top: 150px;
+        height: 50vh;
+        width: 60vw;
+        padding-left: 40px;
+    }
+    .s-g {
+        padding-bottom: 10px;
+    }
+    button {
+        margin-top: 20px;
+    }
+    #day {
+        width: 10vw;
+    }
+    #month {
+        width: 10vw;
+    }
+    #year {
+        width: 10vw;
+    }
+}
+
+@media (min-width:1000px) {
+    section {
+        margin-top: 150px;
+        width: 50vw;
+        height: 65vh;
+    }
+    #day {
+        width: 5vw;
+    }
+    #month {
+        width: 5vw;
+    }
+    #year {
+        width: 5vw;
+    }
+}
