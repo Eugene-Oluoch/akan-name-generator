@@ -6,7 +6,7 @@
 }
 
 body {
-    background-image: url('/yoel-winkler-zCAh6tOWFt8-unsplash.jpg');
+    background-image: url(/yoel-winkler-zCAh6tOWFt8-unsplash.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
