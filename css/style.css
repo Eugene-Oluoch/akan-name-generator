@@ -6,7 +6,7 @@
 }
 
 body {
-    background-image: url(/yoel-winkler-zCAh6tOWFt8-unsplash.jpg);
+    background-image: url(../media/ghana.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -17,7 +17,7 @@ body {
 section {
     margin: 50px auto 0;
     width: 90vw;
-    height: 130vh;
+    height: 120vh;
     padding: 10px 10px;
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
