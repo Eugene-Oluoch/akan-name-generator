@@ -17,7 +17,7 @@ body {
 section {
     margin: 50px auto 0;
     width: 90vw;
-    height: 120vh;
+    height: 132vh;
     padding: 10px 10px;
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
@@ -75,34 +75,20 @@ section {
     border: 1px solid #1FAB89;
 }
 
-@media (min-width:479px) {
-    section {
-        margin-top: 150px;
-        height: 160vh;
-        width: 90vw;
-        padding-left: 40px;
-    }
-    .s-g {
-        padding-bottom: 10px;
-    }
-    #submit {
-        margin-top: 20px;
-    }
-    #day {
-        width: 10vw;
-    }
-    #month {
-        width: 10vw;
-    }
-    #year {
-        width: 10vw;
-    }
+#display-name {
+    padding-top: 20px;
+    font-size: 1.2rem;
+}
+
+#result {
+    padding-top: 20px;
+    font-size: 1rem;
 }
 
 @media (min-width:768px) {
     section {
         margin-top: 150px;
-        height: 50vh;
+        height: 55vh;
         width: 60vw;
         padding-left: 40px;
     }
@@ -127,7 +113,7 @@ section {
     section {
         margin-top: 150px;
         width: 50vw;
-        height: 65vh;
+        height: 70vh;
     }
     #day {
         width: 5vw;
