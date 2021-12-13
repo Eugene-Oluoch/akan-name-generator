@@ -15,9 +15,9 @@ body {
 }
 
 section {
-    margin: 50px auto 0;
+    margin: 150px auto 0;
     width: 90vw;
-    height: 132vh;
+    height: 70vh;
     padding: 10px 10px;
     background-color: rgba(0, 0, 0, 0.7);
     color: white;
@@ -55,15 +55,15 @@ section {
 }
 
 #day {
-    width: 15vw;
+    width: 10vw;
 }
 
 #month {
-    width: 15vw;
+    width: 10vw;
 }
 
 #year {
-    width: 18vw;
+    width: 10vw;
 }
 
 #submit {
@@ -85,18 +85,15 @@ section {
     font-size: 1rem;
 }
 
-@media (min-width:768px) {
+.s-g {
+    padding-bottom: 10px;
+}
+
+@media screen and (min-width:576px) {
     section {
-        margin-top: 150px;
-        height: 55vh;
-        width: 60vw;
-        padding-left: 40px;
-    }
-    .s-g {
-        padding-bottom: 10px;
-    }
-    button {
-        margin-top: 20px;
+        height: 70vh;
+        width: 80vw;
+        padding-left: 20px;
     }
     #day {
         width: 10vw;
@@ -109,11 +106,26 @@ section {
     }
 }
 
-@media (min-width:1000px) {
+@media screen and (min-width:768px) {
     section {
-        margin-top: 150px;
+        width: 70vw;
+        padding-left: 20px;
+    }
+    #day {
+        width: 7vw;
+    }
+    #month {
+        width: 7vw;
+    }
+    #year {
+        width: 7vw;
+    }
+}
+
+@media screen and (min-width:979px) {
+    section {
         width: 50vw;
-        height: 70vh;
+        padding-left: 20px;
     }
     #day {
         width: 5vw;
