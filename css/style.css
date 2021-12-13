@@ -15,7 +15,7 @@ body {
 }
 
 section {
-    margin: 150px auto 0;
+    margin: 100px auto 100px;
     width: 90vw;
     height: 70vh;
     padding: 10px 10px;
@@ -24,6 +24,7 @@ section {
     border-radius: 10px;
     display: flex;
     flex-direction: column;
+    overflow: scroll;
 }
 
 .heading,
