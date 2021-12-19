@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 * {
     padding: 0;
     margin: 0;
@@ -6,134 +7,109 @@
 }
 
 body {
-    background-image: url(../media/ghana.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../media/ghana.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
-section {
-    margin: 70px auto 0;
-    width: 90vw;
-    height: 90vh;
-    padding: 10px 10px;
-    background-color: rgba(0, 0, 0, 0.7);
+
+/*Start of header styles*/
+
+.main-header {
+    text-align: center;
+    width: 330px;
+    margin: 5rem auto 0;
     color: white;
-    border-radius: 10px;
+}
+
+.main-header-title {
+    padding-bottom: 1.5rem;
+    text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
+}
+
+.main-header-description {
+    width: 320px;
+    font-size: 0.9rem;
+    padding-bottom: 3rem;
+    color: hsl(246, 25%, 77%);
+}
+
+
+/*End of header styles*/
+
+
+/*Start of main styles*/
+
+.akan-main-section {
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 0 auto;
+    width: 330px;
+    height: 350px;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    border-radius: 1rem;
     display: flex;
     flex-direction: column;
 }
 
-.heading,
-.main {
-    font-size: 0.85rem;
+.input {
+    color: hsl(246, 25%, 47%);
+    width: 300px;
+    padding: 10px 10px;
+    margin-bottom: 20px;
+    border-radius: 0.5rem;
+    border: 1px solid rgba(128, 128, 128, 0.5);
 }
 
-.heading h2 {
-    font-family: roboto;
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+.akan-gender p {
+    padding-bottom: 0.7rem;
 }
 
-.heading {
-    padding-bottom: 10px;
-}
-
-.heading p {
-    padding-bottom: 10px;
-}
-
-.f {
-    padding-bottom: 5px;
-}
-
-.s {
-    padding-bottom: 20px;
-}
-
-#day {
-    width: 10vw;
-}
-
-#month {
-    width: 10vw;
-}
-
-#year {
-    width: 10vw;
-}
-
-#submit {
-    display: block;
-    margin: 10px auto 0;
-    padding: 10px 30px;
-    color: black;
-    background-color: #1FAB89;
-    border: 1px solid #1FAB89;
-}
-
-#display-name {
-    padding-top: 20px;
-    font-size: 1.2rem;
-}
-
-#result {
-    padding-top: 20px;
+.akan-generate button {
+    margin-top: 2rem;
+    width: 300px;
+    padding: 10px 20px;
     font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 1px solid black;
+    transition: 0.3s ease-in-out;
 }
 
-.s-g {
-    padding-bottom: 10px;
+.akan-generate button:hover {
+    background-color: black;
+    color: white;
+    border: 1px solid black;
+    transition: 0.3s ease-in-out;
 }
 
-@media screen and (min-width:576px) {
-    section {
-        height: 90vh;
-        width: 80vw;
-        padding-left: 20px;
-    }
-    #day {
-        width: 10vw;
-    }
-    #month {
-        width: 10vw;
-    }
-    #year {
-        width: 10vw;
-    }
-}
 
-@media screen and (min-width:768px) {
-    section {
-        width: 70vw;
-        padding-left: 20px;
+/*End os main styles*/
+
+
+/*Start of Media queries*/
+
+@media screen and (min-width: 978px) {
+    .container {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 80vh;
+        margin: 4rem auto;
+        width: 800px;
     }
-    #day {
-        width: 7vw;
+    .main-header {
+        text-align: left;
+        margin-top: -1rem;
     }
-    #month {
-        width: 7vw;
-    }
-    #year {
-        width: 7vw;
+    .main-header-title {
+        font-size: 2rem;
     }
 }
 
-@media screen and (min-width:979px) {
-    section {
-        width: 50vw;
-        padding-left: 20px;
-    }
-    #day {
-        width: 5vw;
-    }
-    #month {
-        width: 5vw;
-    }
-    #year {
-        width: 5vw;
-    }
-}
+
+/*End of media queries*/

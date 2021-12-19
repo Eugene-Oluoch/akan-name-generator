@@ -11,47 +11,40 @@
 </head>
 
 <body>
-    <section>
-        <div class="heading">
-            <h2>AKAN NAME GENERATOR</h2>
-            <p>This is a web app that takes your birthday details and calculates the day of the week you were born and then depending on your gender it outputs your Akan Name.</p>
-            <p>This idea was driven from Ghanian culture where children are given their first names as the 'day name' which corresponds to the day in the week they were born.</p>
+    <main>
+        <div class="container">
+            <section class="main-header">
+                <div class="main-header-title">
+                    <h2>akan name generator</h2>
+                </div>
+                <div class="main-header-description">
+                    <p>This is a simple web app that generates your Akan Name from your gender and date of birth.</p>
+                </div>
+            </section>
+            <section class="akan-main-section">
+                <article class="akan-day">
+                    <input class="input" type="number" name="day" id="day" placeholder="Day" value="day" required>
+                </article>
+                <article class="akan-month">
+                    <input class="input" type="number" name="month" id="month" placeholder="Month" value="month" required>
+                </article>
+                <article class="akan-year">
+                    <input class="input" type="number" name="year" id="year" placeholder="Year" value="year" required>
+                </article>
+                <article class="akan-gender">
+                    <p class="akan-genderlabel">select your gender</p>
+                    Male:
+                    <input type="radio" name="gender" id="male-gender" value="Male"> Female:
+                    <input type="radio" name="gender" id="female-gender" value="Female">
+                </article>
+                <article class="akan-generate">
+                    <button onclick="getAkan()">generate</button>
+                </article>
+            </section>
         </div>
-        <div class="main">
-            <p class="f">Lets calculate your Akan name.</p>
-            <p class="s">Proceed filling the form below and exceute it by clicking the generate button.</p>
-            <form onsubmit="return generateAkanName()">
-                <label for="day">
-                    Day:
-                    <input type="number" id="day" placeholder="DD" required>
-                </label>
-                <label for="month">
-                    Month:
-                    <input type="number" id="month" placeholder="MM" required>
-                </label>
-                <label for="year">
-                    Year:
-                    <input type="number" id="year" placeholder="YYYY" required>
-                </label>
-                <br><br>
-                <p class="s-g">Select your Gender:</p>
-                <label for="male-gender">
-                    Male
-                    <input type="radio" id="male-gender" name="gender" value="male">
-                </label>
-                <label for="female-gender">
-                    Female
-                    <input type="radio" id="female-gender" name="gender" value="female">
-                </label>
-                <br><br>
-                <input type="submit" value="GENERATE" id="submit">
-            </form>
-            <h5 id="display-name"> Your Akan name will be printed below: </h5>
-            <p id="result"></p>
-        </div>
-
-    </section>
-
+    </main>
+    <div id="disp" style="color:green; font-size:18px; font-weight:bold;">
+    </div>
     <script src="js/akan.js"></script>
 </body>
 
