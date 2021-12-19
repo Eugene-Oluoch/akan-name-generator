@@ -26,9 +26,24 @@ body {
 }
 
 .main-header-title {
+    animation-name: fromRight;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
     padding-bottom: 1.5rem;
     text-transform: capitalize;
     font-family: 'Poppins', sans-serif;
+}
+
+@keyframes fromRight {
+    0% {
+        transform: translateX(-1000px);
+    }
+    50% {
+        transform: translateX(50px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
 }
 
 .main-header-description {
@@ -108,6 +123,20 @@ body {
     }
     .main-header-title {
         font-size: 2rem;
+        animation-name: fromTop;
+        animation-duration: 3s;
+        animation-iteration-count: 1;
+    }
+    @keyframes fromTop {
+        0% {
+            transform: translateY(-1000px);
+        }
+        50% {
+            transform: translateY(50px);
+        }
+        100% {
+            transform: translateY(0px);
+        }
     }
 }
 
